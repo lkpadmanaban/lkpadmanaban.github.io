@@ -1,7 +1,6 @@
 # Lokesh Kumar Padmanaban — Executive Cloud & Agentic AI Portfolio Website
 
-> **Live Production Domain**: [https://lkpadmanaban.io/](https://lkpadmanaban.io/)  
-> **GitHub Pages Backup**: [https://lkpadmanaban.github.io/portfolio/](https://lkpadmanaban.github.io/portfolio/)  
+> **Live Deployment URL**: [https://lkpadmanaban.github.io/portfolio/](https://lkpadmanaban.github.io/portfolio/)  
 > **Repository**: [https://github.com/lkpadmanaban/portfolio](https://github.com/lkpadmanaban/portfolio)  
 > **Author**: Lokesh Kumar Padmanaban — Senior Cloud & Agentic AI Solutions Architect  
 > **Focus**: Enterprise Presales Leadership (80%) · Deep Technical Delivery & Deployed AI Agents (20%)  
