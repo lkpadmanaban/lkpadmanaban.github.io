@@ -57,6 +57,13 @@ function initTheme() {
 function initCanvas() {
   const canvas = document.getElementById('neuralCanvas');
   if (!canvas) return;
+
+  // Only show canvas in dark mode — keep light mode clean and warm
+  if (document.documentElement.classList.contains('light')) {
+    canvas.style.display = 'none';
+    return;
+  }
+
   const ctx = canvas.getContext('2d');
 
   let width = (canvas.width = window.innerWidth);
