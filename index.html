@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lokesh Kumar Padmanaban | Senior Cloud & Agentic AI Solutions Architect · Enterprise Presales & Engineering Leader</title>
+  <meta name="description" content="10+ years architecting enterprise cloud & agentic AI systems, leading technical presales discovery, and delivering production-grade AI agents across Azure AI Foundry, Copilot Studio, Microsoft Fabric, and zero-trust hybrid infrastructure.">
+  <meta name="keywords" content="Cloud Solutions Architect, Agentic AI, Azure AI Foundry, Microsoft Copilot Studio, Enterprise Presales, Microsoft Fabric, LangChain, MCP, Terraform, Entra ID, Zero Trust, Cloud Migration, Toronto">
+  <meta name="author" content="Lokesh Kumar Padmanaban">
+
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lkpadmanaban.github.io/">
+  <meta property="og:title" content="Lokesh Kumar Padmanaban | Cloud & Agentic AI Solutions Architect">
+  <meta property="og:description" content="10+ years bridging boardroom strategy with production reality. Presales leadership, multi-agent AI deployments, and resilient enterprise cloud architectures.">
+  <meta property="og:image" content="https://lkpadmanaban.github.io/assets/og-preview.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body class="theme-dark">
+  <!-- Interactive Canvas Background -->
+  <canvas id="neuralCanvas" class="background-canvas" aria-hidden="true"></canvas>
+  <div class="ambient-mesh" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- Site Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner container">
+      <a href="#top" class="brand-logo" aria-label="Lokesh Kumar Padmanaban Homepage">
+        <span class="logo-symbol">LP</span>
+        <div class="logo-text">
+          <span class="logo-name">Lokesh Padmanaban</span>
+          <span class="logo-role">Cloud & AI Solutions Architect</span>
+        </div>
+      </a>
+
+      <!-- Status Pill -->
+      <div class="status-badge" title="Open for Enterprise Advisory, Solutions Architecture & Leadership">
+        <span class="pulse-dot"></span>
+        <span class="status-text">Available for Enterprise Advisory</span>
+      </div>
+
+      <!-- Nav Links -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#mandate" class="nav-link">Mandate</a></li>
+          <li><a href="#domains" class="nav-link">Architectural Domains</a></li>
+          <li><a href="#engine" class="nav-link">Solutions Engine</a></li>
+          <li><a href="#proof" class="nav-link">Deployed Proof</a></li>
+          <li><a href="#agents" class="nav-link">Agent Matrix</a></li>
+          <li><a href="#career" class="nav-link">Leadership & Career</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#perspectives" class="nav-link">Perspectives</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="header-actions">
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle Color Theme" title="Toggle Dark/Light Mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm header-cta">
+          <span>Schedule Discovery</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobileMenuBtn" class="mobile-toggle" aria-label="Open Navigation Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <nav class="mobile-nav">
+      <a href="#mandate" class="mobile-nav-link">Mandate</a>
+      <a href="#domains" class="mobile-nav-link">Architectural Domains</a>
+      <a href="#engine" class="mobile-nav-link">Solutions Engine</a>
+      <a href="#proof" class="mobile-nav-link">Deployed Proof</a>
+      <a href="#agents" class="mobile-nav-link">Agent Matrix</a>
+      <a href="#career" class="mobile-nav-link">Leadership & Career</a>
+      <a href="#certifications" class="mobile-nav-link">Certifications</a>
+      <a href="#perspectives" class="mobile-nav-link">Perspectives</a>
+      <a href="#contact" class="mobile-nav-link">Contact & Consultation</a>
+    </nav>
+  </div>
+
+  <main id="top" class="site-main">
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero" aria-labelledby="hero-title">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="eyebrow-wrapper anim-fade-in">
+            <span class="eyebrow-chip">Enterprise Presales & Systems Engineering Leader</span>
+            <span class="eyebrow-divider">/</span>
+            <span class="eyebrow-accent">10+ Years Cloud & AI</span>
+          </div>
+
+          <h1 id="hero-title" class="hero-headline anim-fade-up">
+            Architecting & deploying <span class="gradient-text">production-grade AI agents</span> and resilient enterprise cloud ecosystems.
+          </h1>
+
+          <p class="hero-subtext anim-fade-up delay-1">
+            Bridging boardroom ambition and production reality with high-impact cloud & agentic AI architectures. 
+            <strong>80% Presales Discovery & Deal Execution</strong> driving multimillion-dollar contracts · 
+            <strong>20% Deep Technical Delivery & Governance</strong> across Azure AI Foundry, Microsoft Copilot Studio, Microsoft Fabric, and zero-trust infrastructure.
+          </p>
+
+          <div class="hero-actions anim-fade-up delay-2">
+            <a href="#proof" class="btn btn-primary">
+              <span>Explore Deployed AI Proof</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Initiate Presales Discovery</span>
+            </a>
+            <a href="https://github.com/lkpadmanaban" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" title="View GitHub Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+
+          <!-- Highlight Quote / Endorsement -->
+          <div class="hero-endorsement anim-fade-up delay-3">
+            <div class="endorsement-icon">💼</div>
+            <div class="endorsement-content">
+              <p class="endorsement-text">"100+ cloud and AI solutions delivered across banking, healthcare, and government — driving 25% operational efficiency gains and securing multi-million dollar contracts."</p>
+              <div class="endorsement-author">Enterprise Cloud & AI Track Record · Toronto, ON</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Architecture Visualizer Interactive Panel -->
+        <div class="hero-visual anim-fade-in delay-2">
+          <div class="visual-card">
+            <div class="visual-header">
+              <div class="visual-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="visual-title">Enterprise Architecture & AI Fabric Engine</div>
+              <span class="visual-live-tag">LIVE ARCHITECTURE</span>
+            </div>
+
+            <div class="visual-body">
+              <!-- Interactive Architecture Diagram Node Tree -->
+              <div class="arch-canvas-container">
+                <div class="arch-layer client-layer">
+                  <div class="arch-node active" data-node="presales">
+                    <span class="node-icon">🎯</span>
+                    <span class="node-label">Presales Discovery & Strategy</span>
+                    <span class="node-sub">80% Scope · SOW & RFP Engine</span>
+                  </div>
+                </div>
+
+                <div class="arch-connector-v"></div>
+
+                <div class="arch-layer core-layer">
+                  <div class="arch-node-group">
+                    <div class="arch-node highlight" data-node="ai">
+                      <span class="node-icon">🤖</span>
+                      <span class="node-label">Azure AI Foundry & Copilot</span>
+                      <span class="node-sub">Multi-Agents · MCP · LangChain</span>
+                    </div>
+                    <div class="arch-node highlight" data-node="data">
+                      <span class="node-icon">📊</span>
+                      <span class="node-label">Microsoft Fabric & OneLake</span>
+                      <span class="node-sub">Synapse · Real-Time Data Pipelines</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="arch-connector-v"></div>
+
+                <div class="arch-layer infra-layer">
+                  <div class="arch-node-group">
+                    <div class="arch-node" data-node="cloud">
+                      <span class="node-icon">☁️</span>
+                      <span class="node-label">Azure & AWS Landing Zones</span>
+                      <span class="node-sub">Hybrid Cloud · Terraform CI/CD</span>
+                    </div>
+                    <div class="arch-node" data-node="security">
+                      <span class="node-icon">🛡️</span>
+                      <span class="node-label">Zero-Trust & Entra ID</span>
+                      <span class="node-sub">SD-WAN · WAF · SOC/HIPAA</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Interactive Node Info Panel -->
+              <div class="node-info-panel" id="nodeInfoPanel">
+                <div class="node-info-title">💡 Interactive Architecture Matrix</div>
+                <p class="node-info-desc">Hover or click any node above to inspect architectural decisions, enterprise technologies, and business outcomes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXECUTIVE METRICS STRIP -->
+    <section class="stats-strip" aria-label="Executive Impact Metrics">
+      <div class="container stats-container">
+        <div class="stat-card">
+          <div class="stat-number"><span class="counter" data-target="10">10</span>+</div>
+          <div class="stat-label">Years of Enterprise Rigor</div>
+          <div class="stat-sub">Cloud Architecture, AI & Presales Leadership</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number"><span class="counter" data-target="100">100</span>+</div>
+          <div class="stat-label">Enterprise Cloud Architectures</div>
+          <div class="stat-sub">Delivered across Banking, Health & Gov</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number">80% / 20%</div>
+          <div class="stat-label">Presales & Delivery Synergy</div>
+          <div class="stat-sub">Discovery, SOWs, PoCs to Production Delivery</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number">25%</div>
+          <div class="stat-label">Operational Efficiency Gains</div>
+          <div class="stat-sub">Via Terraform CI/CD & AI Agent Automation</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANDATE & LEADERSHIP PHILOSOPHY -->
+    <section class="section-block" id="mandate" aria-labelledby="mandate-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Leadership Mandate</div>
+          <h2 id="mandate-title" class="section-title">Why Presales Discovery Demands Deep Production Engineering Chops.</h2>
+          <p class="section-lead">
+            In enterprise technology, the difference between a stalled POC and a multi-million dollar transformation comes down to one principle:
+            <strong>A presales architect who knows exactly how systems operate in production builds trust that salespeople alone cannot replicate.</strong>
+          </p>
+        </div>
+
+        <div class="mandate-grid">
+          <div class="mandate-narrative">
+            <p>
+              Over the last decade, I have operated at the intersection of technical discovery, enterprise sales enablement, and deep systems engineering. 
+              When engaging C-level executives (CTOs, CIOs, CISOs), I translate high-level business drivers into auditable, high-performance solution designs.
+            </p>
+            <p>
+              Whether deploying <strong>autonomous AI agents</strong> that handle sensitive after-call summaries in regulated contact centers, designing 
+              <strong>Azure AI Foundry</strong> pipelines with guardrails, or constructing multi-region <strong>Azure Landing Zones</strong>, my approach combines technical mastery with rigorous business value quantification.
+            </p>
+            
+            <div class="leadership-signals">
+              <div class="signal-item">
+                <span class="signal-icon">👥</span>
+                <div>
+                  <strong>Team Leadership & Enablement:</strong> Mentoring architects and training sales organizations on Generative AI, Copilot Studio, and Azure cloud capabilities.
+                </div>
+              </div>
+              <div class="signal-item">
+                <span class="signal-icon">📑</span>
+                <div>
+                  <strong>Presales & Commercial Ownership:</strong> Authoring winning SOWs, RFP/RFI responses, LOEs, cost analyses, and delivering 12+ live PoC demonstrations.
+                </div>
+              </div>
+              <div class="signal-item">
+                <span class="signal-icon">🔒</span>
+                <div>
+                  <strong>Regulated Compliance:</strong> Designing zero-trust architectures meeting SOC 2, HIPAA, OSFI, and public sector governance mandates.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mandate-pillars">
+            <div class="pillar-card">
+              <div class="pillar-number">01</div>
+              <h3 class="pillar-title">Enterprise Presales Leadership</h3>
+              <p class="pillar-text">Leading sales discovery workshops, qualifying high-value opportunities, designing actionable solution blueprints, and presenting ROI metrics to C-level stakeholders to win six- to seven-figure contracts.</p>
+              <div class="pillar-tags">
+                <span class="tag">RFP / RFI Authoring</span>
+                <span class="tag">SOW & LOE Estimation</span>
+                <span class="tag">C-Level Demos</span>
+                <span class="tag">Commercial Strategy</span>
+              </div>
+            </div>
+
+            <div class="pillar-card highlight-card">
+              <div class="pillar-number">02</div>
+              <h3 class="pillar-title">Deployed AI & Agentic Systems</h3>
+              <p class="pillar-text">Architecting and putting into production autonomous and human-in-the-loop multi-agent swarms, Model Context Protocol (MCP) servers, Azure AI Foundry, Microsoft Copilot Studio, and LangChain RAG pipelines.</p>
+              <div class="pillar-tags">
+                <span class="tag">Azure AI Foundry</span>
+                <span class="tag">Copilot Studio</span>
+                <span class="tag">Agentic RAG</span>
+                <span class="tag">MCP Tool Servers</span>
+                <span class="tag">LangChain</span>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-number">03</div>
+              <h3 class="pillar-title">Cloud, Data & Zero-Trust Infra</h3>
+              <p class="pillar-text">Delivering enterprise Azure/AWS architectures, Microsoft Fabric data fabrics, Terraform CI/CD automation, Kubernetes microservices, SD-WAN networking, and Entra ID zero-trust security.</p>
+              <div class="pillar-tags">
+                <span class="tag">Azure Landing Zones</span>
+                <span class="tag">Microsoft Fabric</span>
+                <span class="tag">Terraform IaC</span>
+                <span class="tag">Entra ID & XDR</span>
+                <span class="tag">SD-WAN / BGP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARCHITECTURAL DOMAINS BREADTH -->
+    <section class="section-block section-alt" id="domains" aria-labelledby="domains-title">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge">Full-Spectrum Competency</div>
+          <h2 id="domains-title" class="section-title">Comprehensive Enterprise Technology Domains</h2>
+          <p class="section-lead">A unified architecture practice spanning Data, AI, Cloud Infrastructure, Advanced Networking, and Security.</p>
+        </div>
+
+        <!-- Domain Tabs -->
+        <div class="domain-tabs-wrapper">
+          <div class="domain-tabs" role="tablist" aria-label="Technology Domains">
+            <button class="domain-tab-btn active" role="tab" aria-selected="true" data-domain="ai">
+              <span class="tab-icon">🤖</span>
+              <span>AI & Agentic Systems</span>
+            </button>
+            <button class="domain-tab-btn" role="tab" aria-selected="false" data-domain="data">
+              <span class="tab-icon">📊</span>
+              <span>Data & Analytics</span>
+            </button>
+            <button class="domain-tab-btn" role="tab" aria-selected="false" data-domain="cloud">
+              <span class="tab-icon">☁️</span>
+              <span>Cloud & Infrastructure</span>
+            </button>
+            <button class="domain-tab-btn" role="tab" aria-selected="false" data-domain="network">
+              <span class="tab-icon">🌐</span>
+              <span>Networking & SD-WAN</span>
+            </button>
+            <button class="domain-tab-btn" role="tab" aria-selected="false" data-domain="security">
+              <span class="tab-icon">🛡️</span>
+              <span>Security & Governance</span>
+            </button>
+            <button class="domain-tab-btn" role="tab" aria-selected="false" data-domain="devops">
+              <span class="tab-icon">⚙️</span>
+              <span>DevOps & Automation</span>
+            </button>
+          </div>
+
+          <!-- Domain Content Panels -->
+          <div class="domain-panels">
+            <!-- AI Panel -->
+            <div class="domain-panel active" id="domain-ai" role="tabpanel">
+              <div class="domain-panel-grid">
+                <div class="domain-desc">
+                  <h3>Agentic AI, LLM Orchestration & Enterprise Foundry</h3>
+                  <p>Specialized in moving enterprises from raw prompt experiments to governed, production-grade agentic workflows. Architecting multi-agent swarms, Model Context Protocol (MCP) clients/servers, and custom Copilot extensions.</p>
+                  <ul class="domain-feature-list">
+                    <li><strong>Platforms:</strong> Azure AI Foundry, Microsoft Copilot Studio, OpenAI Services, Ollama (Local LLMs)</li>
+                    <li><strong>Frameworks:</strong> LangChain, Haystack, Semantic Kernel, AutoGen, LlamaIndex</li>
+                    <li><strong>Architectures:</strong> ReAct with Guardrails, Hierarchical Multi-Agent Orchestration, Agentic Graph RAG, HyDE, Human-in-the-Loop (HITL)</li>
+                    <li><strong>Production Practice:</strong> Prompt Flow Engineering, Deterministic Guardrails, LLM Evaluations, Output JSON Schema Validation</li>
+                  </ul>
+                </div>
+                <div class="domain-matrix">
+                  <div class="matrix-card">
+                    <span class="matrix-label">Production Capability</span>
+                    <h4>Enterprise AI Contact Center</h4>
+                    <p>Real-time transcription, Azure OpenAI summarization, and automated Salesforce/Genesys CRM sync.</p>
+                  </div>
+                  <div class="matrix-card">
+                    <span class="matrix-label">Open-Source Leadership</span>
+                    <h4>100+ Agent Master Portfolio</h4>
+                    <p>Active multi-paradigm agent engineering repository covering ReAct, MCP, and Self-Correcting Reflection.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Data Panel -->
+            <div class="domain-panel" id="domain-data" role="tabpanel">
+              <div class="domain-panel-grid">
+                <div class="domain-desc">
+                  <h3>Microsoft Fabric, OneLake & Modern Data Architecture</h3>
+                  <p>Architecting enterprise-scale unified data platforms that feed transactional reporting, real-time analytics, and downstream AI knowledge bases without data duplication.</p>
+                  <ul class="domain-feature-list">
+                    <li><strong>Platforms:</strong> Microsoft Fabric, OneLake, Azure Synapse Analytics, Azure SQL, Cosmos DB</li>
+                    <li><strong>Data Integration:</strong> Azure Data Factory, Power Platform Dataflows, ABBYY & Kofax Data Capture</li>
+                    <li><strong>Data Modeling:</strong> Medallion Architecture (Bronze/Silver/Gold Delta Lake), Star Schema, Vector Stores (Azure AI Search)</li>
+                    <li><strong>Governance:</strong> Microsoft Purview data cataloging, lineage tracking, and row-level security (RLS)</li>
+                  </ul>
+                </div>
+                <div class="domain-matrix">
+                  <div class="matrix-card">
+                    <span class="matrix-label">Data Integration</span>
+                    <h4>Automated Document Capture</h4>
+                    <p>High-throughput OCR and unstructured data ingestion pipelines with ABBYY, Kofax, and Azure AI.</p>
+                  </div>
+                  <div class="matrix-card">
+                    <span class="matrix-label">Vector Storage</span>
+                    <h4>Enterprise RAG Data Layer</h4>
+                    <p>Hybrid semantic search with dense vector indexing and BM25 reranking for compliance documents.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cloud Panel -->
+            <div class="domain-panel" id="domain-cloud" role="tabpanel">
+              <div class="domain-panel-grid">
+                <div class="domain-desc">
+                  <h3>Azure & AWS Enterprise Landing Zones & Hybrid Cloud</h3>
+                  <p>10+ years designing and migrating large-scale cloud footprints. Aligning Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF) standards with financial, healthcare, and public sector requirements.</p>
+                  <ul class="domain-feature-list">
+                    <li><strong>Cloud Platforms:</strong> Microsoft Azure (IaaS, PaaS, Serverless, M365), AWS (Compute, Storage, Networking)</li>
+                    <li><strong>Landing Zones:</strong> Hub-and-Spoke topology, Management Groups, Subscription vending, Azure Policy guardrails</li>
+                    <li><strong>Hybrid & Private Cloud:</strong> Azure Arc, VMware vSphere, Hyper-V, Co-location, Data Center Consolidation</li>
+                    <li><strong>High Availability & DR:</strong> Multi-region failover, ASR (Azure Site Recovery), Veeam, Commvault, Zerto replication</li>
+                  </ul>
+                </div>
+                <div class="domain-matrix">
+                  <div class="matrix-card">
+                    <span class="matrix-label">Scale & Reach</span>
+                    <h4>100+ Enterprise Blueprints</h4>
+                    <p>Proven track record migrating complex legacy applications to modern resilient cloud architectures.</p>
+                  </div>
+                  <div class="matrix-card">
+                    <span class="matrix-label">Cost Optimization</span>
+                    <h4>FinOps & Governance</h4>
+                    <p>Automated resource tagging, reservation modeling, and cost anomaly detection pipelines.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Networking Panel -->
+            <div class="domain-panel" id="domain-network" role="tabpanel">
+              <div class="domain-panel-grid">
+                <div class="domain-desc">
+                  <h3>Advanced Enterprise Networking & Software-Defined WAN</h3>
+                  <p>Deep foundational networking expertise. Designing low-latency, resilient global connectivity across hybrid on-premise environments and cloud landing zones.</p>
+                  <ul class="domain-feature-list">
+                    <li><strong>Protocols & Routing:</strong> BGP, OSPF, TCP/IP, VLANs, STP, NAT, IPsec, ExpressRoute, AWS DirectConnect</li>
+                    <li><strong>SD-WAN & Edge:</strong> Cisco, Fortinet, Palo Alto, Azure Virtual WAN, Cloud Edge routers</li>
+                    <li><strong>Traffic Management:</strong> Azure Application Gateway, Front Door, Load Balancers, Traffic Manager</li>
+                    <li><strong>Diagnostics:</strong> Wireshark packet capture, network performance monitoring, MTU/latency optimization</li>
+                  </ul>
+                </div>
+                <div class="domain-matrix">
+                  <div class="matrix-card">
+                    <span class="matrix-label">Hybrid Interconnect</span>
+                    <h4>Global ExpressRoute / VPN</h4>
+                    <p>Encrypted mesh routing connecting multiple enterprise branches to multi-region cloud vNets.</p>
+                  </div>
+                  <div class="matrix-card">
+                    <span class="matrix-label">Micro-Segmentation</span>
+                    <h4>Zero-Trust vNet Architecture</h4>
+                    <p>NSG & ASG isolation preventing lateral attack propagation across production databases and compute.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Security Panel -->
+            <div class="domain-panel" id="domain-security" role="tabpanel">
+              <div class="domain-panel-grid">
+                <div class="domain-desc">
+                  <h3>Zero-Trust Architecture, Entra ID & Enterprise SecOps</h3>
+                  <p>Embedding security and governance into every layer of design from day zero. Protecting identity, application boundaries, data transit, and AI agent execution.</p>
+                  <ul class="domain-feature-list">
+                    <li><strong>Identity & Access:</strong> Microsoft Entra ID (Azure AD), Conditional Access, PIM, MFA, RBAC, OAuth2/OIDC</li>
+                    <li><strong>Perimeter & Defense:</strong> Web Application Firewalls (WAF), Next-Gen Firewalls (Palo Alto, Fortinet, Cisco), IPS/IDS</li>
+                    <li><strong>SecOps & Threat Intel:</strong> Alert Logic XDR/MDR, SIEM, SOAR, Microsoft Sentinel, Microsoft Defender for Cloud</li>
+                    <li><strong>Compliance Standards:</strong> SOC 2 Type II, HIPAA, PCI-DSS, ISO 27001, OSFI (Canadian Banking)</li>
+                  </ul>
+                </div>
+                <div class="domain-matrix">
+                  <div class="matrix-card">
+                    <span class="matrix-label">AI Security</span>
+                    <h4>LLM & Agent Guardrails</h4>
+                    <p>Prompt injection filters, token leakage prevention, and RBAC-controlled tool execution envelopes.</p>
+                  </div>
+                  <div class="matrix-card">
+                    <span class="matrix-label">Credentials</span>
+                    <h4>SC-900 & AZ-104 Certified</h4>
+                    <p>Formal Microsoft security, identity, and compliance architect certifications.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- DevOps Panel -->
+            <div class="domain-panel" id="domain-devops" role="tabpanel">
+              <div class="domain-panel-grid">
+                <div class="domain-desc">
+                  <h3>Infrastructure as Code, Terraform CI/CD & Containers</h3>
+                  <p>Standardizing infrastructure provisioning through declarative automation. Eliminating manual configuration drift and empowering developers with self-service platforms.</p>
+                  <ul class="domain-feature-list">
+                    <li><strong>Infrastructure as Code:</strong> Terraform, Bicep, ARM Templates, CloudFormation</li>
+                    <li><strong>CI/CD Pipelines:</strong> Azure DevOps Pipelines, GitHub Actions, Jenkins, GitOps</li>
+                    <li><strong>Containerization:</strong> Azure Kubernetes Service (AKS), Docker, Container Apps, Helm</li>
+                    <li><strong>Scripting & Automation:</strong> Python, PowerShell, Bash, REST APIs, YAML</li>
+                  </ul>
+                </div>
+                <div class="domain-matrix">
+                  <div class="matrix-card">
+                    <span class="matrix-label">Efficiency Impact</span>
+                    <h4>25% Operational Efficiency</h4>
+                    <p>Terraform modules automated client provisioning, saving hundreds of engineering hours.</p>
+                  </div>
+                  <div class="matrix-card">
+                    <span class="matrix-label">GitHub Certified</span>
+                    <h4>GH-300 Copilot Certified</h4>
+                    <p>Demonstrated mastery in AI-assisted developer workflows and CI/CD lifecycle enhancement.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTIONS & PRESALES ENGINE (INTERACTIVE 4 STAGES) -->
+    <section class="section-block" id="engine" aria-labelledby="engine-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Delivery Lifecycle</div>
+          <h2 id="engine-title" class="section-title">The 4-Stage Solutions & Presales Engine</h2>
+          <p class="section-lead">A battle-tested methodology connecting initial client qualification to scalable, governed production delivery.</p>
+        </div>
+
+        <div class="engine-layout">
+          <!-- Rail Stage Selectors -->
+          <div class="engine-rail" role="tablist" aria-label="Solutions Engine Phases">
+            <button class="engine-phase-btn active" role="tab" aria-selected="true" data-phase="1">
+              <span class="phase-num">01</span>
+              <div class="phase-info">
+                <span class="phase-title">Presales Discovery & Qualification</span>
+                <span class="phase-summary">Translating boardroom objectives into actionable cloud & AI requirements.</span>
+              </div>
+            </button>
+
+            <button class="engine-phase-btn" role="tab" aria-selected="false" data-phase="2">
+              <span class="phase-num">02</span>
+              <div class="phase-info">
+                <span class="phase-title">Architecture Blueprint & Landing Zones</span>
+                <span class="phase-summary">Engineering zero-trust foundations, data pipelines & landing zones.</span>
+              </div>
+            </button>
+
+            <button class="engine-phase-btn" role="tab" aria-selected="false" data-phase="3">
+              <span class="phase-num">03</span>
+              <div class="phase-info">
+                <span class="phase-title">Rapid PoC & Agentic AI Validation</span>
+                <span class="phase-summary">Deploying working agents & cloud automation to prove ROI in days.</span>
+              </div>
+            </button>
+
+            <button class="engine-phase-btn" role="tab" aria-selected="false" data-phase="4">
+              <span class="phase-num">04</span>
+              <div class="phase-info">
+                <span class="phase-title">Production Handoff & Value Scaling</span>
+                <span class="phase-summary">Enterprise governance, sales enablement & operational SLA compliance.</span>
+              </div>
+            </button>
+          </div>
+
+          <!-- Rail Phase Details -->
+          <div class="engine-display">
+            <!-- Stage 1 Content -->
+            <div class="phase-content active" id="phase-1-content">
+              <div class="phase-header-badge">Stage 01 · Presales Precision</div>
+              <h3 class="phase-headline">Discovery, Opportunity Qualification & ROI Modeling</h3>
+              <p class="phase-intro">Leading client-facing workshops with CIOs, Enterprise Architects, and Line-of-Business leaders to diagnose technical debt, uncover high-ROI AI use cases, and establish bid/no-bid qualification discipline.</p>
+              
+              <div class="phase-columns">
+                <div class="phase-col">
+                  <h4>What Executives Receive</h4>
+                  <ul class="phase-list">
+                    <li>Strategic business case with clear TCO and ROI projections</li>
+                    <li>SOWs with unambiguous scope, deliverables, and LOE estimates</li>
+                    <li>Regulatory & compliance risk posture assessment (SOC2/HIPAA)</li>
+                  </ul>
+                </div>
+                <div class="phase-col">
+                  <h4>Technical Actions</h4>
+                  <ul class="phase-list">
+                    <li>Current-state infrastructure and application dependency mapping</li>
+                    <li>AI feasibility analysis (data readiness, latency, cost per token)</li>
+                    <li>RFP/RFI technical responses with winning architectural vision</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stage 2 Content -->
+            <div class="phase-content" id="phase-2-content">
+              <div class="phase-header-badge">Stage 02 · Architectural Foundations</div>
+              <h3 class="phase-headline">Landing Zone Blueprints & AI Governance Design</h3>
+              <p class="phase-intro">Creating reusable, enterprise-grade blueprints across Azure, Microsoft Fabric, and hybrid clouds that prevent teams from reinventing security, networking, and governance each quarter.</p>
+              
+              <div class="phase-columns">
+                <div class="phase-col">
+                  <h4>Enterprise Deliverables</h4>
+                  <ul class="phase-list">
+                    <li>Multi-subscription Azure Landing Zone architecture with Hub-Spoke vNets</li>
+                    <li>Microsoft Fabric OneLake governance & Medallion data hierarchy</li>
+                    <li>Azure AI Foundry & Copilot Studio security boundary definition</li>
+                  </ul>
+                </div>
+                <div class="phase-col">
+                  <h4>Technical Actions</h4>
+                  <ul class="phase-list">
+                    <li>Terraform modules for infrastructure-as-code parameterization</li>
+                    <li>Entra ID Conditional Access, RBAC, and PIM policy definitions</li>
+                    <li>Multi-region disaster recovery and backup runbook authoring</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stage 3 Content -->
+            <div class="phase-content" id="phase-3-content">
+              <div class="phase-header-badge">Stage 03 · Rapid Prototyping</div>
+              <h3 class="phase-headline">12+ PoCs Shipped: Live Agent & Cloud Validation</h3>
+              <p class="phase-intro">Building tangible, functional proof-of-concept solutions (Azure OpenAI, multi-agent swarms, MCP tools, Terraform CI/CD) that demonstrate undeniable value before contract signature.</p>
+              
+              <div class="phase-columns">
+                <div class="phase-col">
+                  <h4>Proven Track Record</h4>
+                  <ul class="phase-list">
+                    <li>12+ PoC demonstrations leading directly to contract closures</li>
+                    <li>Cloud automation demo achieving 25% efficiency gains</li>
+                    <li>Contact center AI agent demo integrating CRM in 48 hours</li>
+                  </ul>
+                </div>
+                <div class="phase-col">
+                  <h4>Technical Actions</h4>
+                  <ul class="phase-list">
+                    <li>LangChain/Haystack RAG pipeline benchmarking with vector search</li>
+                    <li>Model Context Protocol (MCP) server integration for CRM & ERP</li>
+                    <li>Prompt engineering evaluations, guardrail tuning, and latency audits</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stage 4 Content -->
+            <div class="phase-content" id="phase-4-content">
+              <div class="phase-header-badge">Stage 04 · Production Realization</div>
+              <h3 class="phase-headline">Seamless Handoff, Enablement & Scaled Operations</h3>
+              <p class="phase-intro">Ensuring seamless transition from sales architecture to engineering delivery. Empowering client teams, training sales orgs on AI capabilities, and establishing continuous observability.</p>
+              
+              <div class="phase-columns">
+                <div class="phase-col">
+                  <h4>Commercial & Org Impact</h4>
+                  <ul class="phase-list">
+                    <li>Sales organization enablement: Training reps on GenAI & Copilot</li>
+                    <li>Zero-disruption cutover with SLA-compliant operational runbooks</li>
+                    <li>Auditable enterprise-grade documentation for compliance signoff</li>
+                  </ul>
+                </div>
+                <div class="phase-col">
+                  <h4>Technical Actions</h4>
+                  <ul class="phase-list">
+                    <li>Azure Monitor, Log Analytics, and OpenTelemetry observability setup</li>
+                    <li>CI/CD pipeline handoff with automated automated unit & security tests</li>
+                    <li>Knowledge transfer workshops and architecture defense reviews</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLAGSHIP DEPLOYED AI PROOF & CASE STUDIES -->
+    <section class="section-block section-alt" id="proof" aria-labelledby="proof-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Production Proof</div>
+          <h2 id="proof-title" class="section-title">Production AI & Cloud Architectures</h2>
+          <p class="section-lead">Real-world engagements demonstrating leadership decisions, architectural depth, and measurable commercial results.</p>
+        </div>
+
+        <div class="proof-grid">
+          <!-- Case Study 1: AI Contact Center Agent -->
+          <article class="proof-card featured-proof">
+            <div class="proof-badge-row">
+              <span class="proof-badge">Flagship AI Deployment</span>
+              <span class="proof-tech-pill">Azure OpenAI · Genesys · Salesforce</span>
+            </div>
+            <h3 class="proof-title">AI-Powered Enterprise Contact Center Agent</h3>
+            <p class="proof-tagline">Automating post-call CRM logging and regulatory compliance summarization in high-volume customer service operations.</p>
+            <p class="proof-description">
+              Architected and deployed a production-grade AI agent integrating Genesys Cloud, Salesforce CRM, and Azure OpenAI Service. 
+              The agent captures real-time audio streams, generates auditable structured summaries, and writes verified case records into Salesforce—eliminating manual after-call work.
+            </p>
+            
+            <div class="proof-metrics-row">
+              <div class="proof-metric"><span class="m-val">100%</span><span class="m-lbl">Automated After-Call Work</span></div>
+              <div class="proof-metric"><span class="m-val">Auditable</span><span class="m-lbl">Regulated CRM Records</span></div>
+              <div class="proof-metric"><span class="m-val">&lt; 3.2s</span><span class="m-lbl">Real-Time Processing</span></div>
+            </div>
+
+            <div class="proof-details-grid">
+              <div class="proof-detail-item">
+                <span class="detail-kicker">Leadership Decision</span>
+                <p>Addressed agent burnout and compliance discrepancies by designing an automated, auditable agent instead of relying on manual rep notes.</p>
+              </div>
+              <div class="proof-detail-item">
+                <span class="detail-kicker">Architectural Choices</span>
+                <p>Azure OpenAI GPT-4o with structured Pydantic schema validation, role-based Entra ID access, and event-driven webhook relays.</p>
+              </div>
+              <div class="proof-detail-item">
+                <span class="detail-kicker">Business Outcome</span>
+                <p>Saved hundreds of agent hours per month while guaranteeing 100% adherence to regulatory customer interaction documentation standards.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case Study 2: Regulatory Knowledge Assistant Avatar -->
+          <article class="proof-card">
+            <div class="proof-badge-row">
+              <span class="proof-badge">Governed Knowledge System</span>
+              <span class="proof-tech-pill">Copilot Studio · RAG · Entra ID</span>
+            </div>
+            <h3 class="proof-title">Agentic Regulatory Knowledge Assistant Avatar</h3>
+            <p class="proof-tagline">Secure, role-based access to sensitive compliance and policy knowledge across enterprise departments.</p>
+            <p class="proof-description">
+              Designed an Agentic AI knowledge assistant using Copilot Studio and Azure AI Search. Features strict role-based access control (RBAC), ensuring users only retrieve information within their security clearance while drastically reducing dependency on subject matter experts (SMEs).
+            </p>
+            <div class="proof-metrics-row">
+              <div class="proof-metric"><span class="m-val">70%</span><span class="m-lbl">Faster Compliance Search</span></div>
+              <div class="proof-metric"><span class="m-val">Zero</span><span class="m-lbl">Data Leakage Incidents</span></div>
+            </div>
+            <div class="proof-details-grid">
+              <div class="proof-detail-item">
+                <span class="detail-kicker">Architecture</span>
+                <p>Hybrid semantic retrieval (Vector + BM25), dense reranking, and dynamic prompt guardrails restricting out-of-scope answers.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case Study 3: Cloud Automation & Terraform CI/CD -->
+          <article class="proof-card">
+            <div class="proof-badge-row">
+              <span class="proof-badge">Cloud Automation & Presales</span>
+              <span class="proof-tech-pill">Terraform · Azure DevOps · AKS</span>
+            </div>
+            <h3 class="proof-title">Multi-Million Dollar Cloud Automation & IaC Demo</h3>
+            <p class="proof-tagline">Standardized self-service cloud provisioning securing enterprise multi-million dollar contracts.</p>
+            <p class="proof-description">
+              Developed an end-to-end cloud automation demonstration leveraging Terraform, Azure DevOps CI/CD, and Kubernetes (AKS). Presented directly to C-level decision-makers, proving a 25% operational efficiency gain and directly winning major enterprise deals.
+            </p>
+            <div class="proof-metrics-row">
+              <div class="proof-metric"><span class="m-val">25%</span><span class="m-lbl">Operational Efficiency Gain</span></div>
+              <div class="proof-metric"><span class="m-val">$Multi-M</span><span class="m-lbl">Contract Value Won</span></div>
+            </div>
+            <div class="proof-details-grid">
+              <div class="proof-detail-item">
+                <span class="detail-kicker">Architecture</span>
+                <p>Modular Terraform registry, automated linting/security scans, and zero-downtime blue/green deployment pipelines.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case Study 4: AI Sales Enablement & Copilot Org Rollout -->
+          <article class="proof-card">
+            <div class="proof-badge-row">
+              <span class="proof-badge">Sales Enablement & Coaching</span>
+              <span class="proof-tech-pill">Copilot Studio · Prompt Engineering</span>
+            </div>
+            <h3 class="proof-title">Workforce AI Sales Coach & Organization Enablement</h3>
+            <p class="proof-tagline">Equipping 25+ sellers with an on-demand AI coach to master enterprise AI objection handling.</p>
+            <p class="proof-description">
+              Built and deployed an interactive 4-mode Copilot Agent (Quick Lookup, Quiz Me, Pre-Call Briefing, and Objection Drill) grounded in real client case studies. Enabled sales reps to navigate complex AI objections and generate customized pre-call briefs in seconds.
+            </p>
+            <div class="proof-metrics-row">
+              <div class="proof-metric"><span class="m-val">25+</span><span class="m-lbl">Sellers Upskilled</span></div>
+              <div class="proof-metric"><span class="m-val">&lt; 24h</span><span class="m-lbl">Deployment Turnaround</span></div>
+            </div>
+            <div class="proof-details-grid">
+              <div class="proof-detail-item">
+                <span class="detail-kicker">Business Impact</span>
+                <p>Transformed internal sales readiness, empowering non-technical sellers to converse credibly on AI architecture.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- AGENTIC AI MASTER MATRIX / OPEN-SOURCE REPOSITORY -->
+    <section class="section-block" id="agents" aria-labelledby="agents-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Hands-On AI Engineering</div>
+          <h2 id="agents-title" class="section-title">Open-Source AI Agent Master Matrix</h2>
+          <p class="section-lead">
+            Active milestone project: Building and benchmarking <strong>100+ production-grade AI agent architectures</strong> across modern AI frameworks.
+            <a href="https://github.com/lkpadmanaban" target="_blank" rel="noopener noreferrer" class="text-link">Explore repository on GitHub →</a>
+          </p>
+        </div>
+
+        <!-- Filter Chips -->
+        <div class="matrix-filters">
+          <button class="filter-chip active" data-filter="all">All Paradigms</button>
+          <button class="filter-chip" data-filter="react">ReAct & Guardrails</button>
+          <button class="filter-chip" data-filter="mcp">MCP Tool Servers</button>
+          <button class="filter-chip" data-filter="multi">Multi-Agent Swarms</button>
+          <button class="filter-chip" data-filter="rag">Agentic Graph RAG</button>
+          <button class="filter-chip" data-filter="voice">Voice & Multimodal</button>
+        </div>
+
+        <!-- Agent Grid -->
+        <div class="agents-grid">
+          <!-- Agent 1 -->
+          <div class="agent-card" data-category="react">
+            <div class="agent-header">
+              <span class="agent-badge active-status">🟢 Active & Tested</span>
+              <span class="agent-num">#01</span>
+            </div>
+            <h4 class="agent-title">ReAct Research & Briefing Agent</h4>
+            <p class="agent-desc">Deterministic state machine ReAct agent with regex/n-gram citation guardrails and zero-hallucination verification.</p>
+            <div class="agent-meta">
+              <span>Pure Python</span>
+              <span>100% Test Pass</span>
+              <span>&lt; $0.0004/run</span>
+            </div>
+          </div>
+
+          <!-- Agent 2 -->
+          <div class="agent-card" data-category="multi">
+            <div class="agent-header">
+              <span class="agent-badge in-progress-status">🟡 Production Ready</span>
+              <span class="agent-num">#02</span>
+            </div>
+            <h4 class="agent-title">Hierarchical Multi-Agent Orchestration</h4>
+            <p class="agent-desc">Supervisor-Worker pattern with message bus, consensus engine, and dynamic task delegation across worker nodes.</p>
+            <div class="agent-meta">
+              <span>LangGraph</span>
+              <span>State Machines</span>
+              <span>Fault Tolerant</span>
+            </div>
+          </div>
+
+          <!-- Agent 3 -->
+          <div class="agent-card" data-category="mcp">
+            <div class="agent-header">
+              <span class="agent-badge queue-status">⚪ MCP Standard</span>
+              <span class="agent-num">#03</span>
+            </div>
+            <h4 class="agent-title">Enterprise MCP Tool Server</h4>
+            <p class="agent-desc">Model Context Protocol (MCP) server exposing secure JSON-RPC 2.0 endpoints for CRM, SQL, and cloud infrastructure APIs.</p>
+            <div class="agent-meta">
+              <span>MCP SDK</span>
+              <span>JSON-RPC 2.0</span>
+              <span>RBAC Envelopes</span>
+            </div>
+          </div>
+
+          <!-- Agent 4 -->
+          <div class="agent-card" data-category="react">
+            <div class="agent-header">
+              <span class="agent-badge queue-status">⚪ Self-Correcting</span>
+              <span class="agent-num">#04</span>
+            </div>
+            <h4 class="agent-title">Reflexion Self-Correcting Agent</h4>
+            <p class="agent-desc">Actor-Critic feedback loop with episodic memory that evaluates its own reasoning steps and retries failed tool calls.</p>
+            <div class="agent-meta">
+              <span>Reflexion</span>
+              <span>Actor-Critic</span>
+              <span>Dynamic Memory</span>
+            </div>
+          </div>
+
+          <!-- Agent 5 -->
+          <div class="agent-card" data-category="rag">
+            <div class="agent-header">
+              <span class="agent-badge queue-status">⚪ Graph RAG</span>
+              <span class="agent-num">#05</span>
+            </div>
+            <h4 class="agent-title">Agentic Graph RAG & Hybrid Retrieval</h4>
+            <p class="agent-desc">Knowledge graph traversal combined with HyDE (Hypothetical Document Embeddings) and Corrective RAG (CRAG).</p>
+            <div class="agent-meta">
+              <span>Graph DB</span>
+              <span>HyDE</span>
+              <span>Vector Search</span>
+            </div>
+          </div>
+
+          <!-- Agent 6 -->
+          <div class="agent-card" data-category="voice">
+            <div class="agent-header">
+              <span class="agent-badge queue-status">⚪ Real-Time</span>
+              <span class="agent-num">#09</span>
+            </div>
+            <h4 class="agent-title">Bidirectional Voice Live Agent</h4>
+            <p class="agent-desc">Streaming real-time multimodal voice agent with WebSocket audio streaming, VAD (Voice Activity Detection), and tool execution.</p>
+            <div class="agent-meta">
+              <span>WebSockets</span>
+              <span>VAD Audio</span>
+              <span>Low Latency</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAREER PROGRESSION & LEADERSHIP TIMELINE -->
+    <section class="section-block section-alt" id="career" aria-labelledby="career-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Leadership Progression</div>
+          <h2 id="career-title" class="section-title">Career Milestones & Scope of Accountability</h2>
+          <p class="section-lead">A steady ascent in technical leadership, presales ownership, and enterprise architecture responsibility.</p>
+        </div>
+
+        <div class="career-timeline">
+          <!-- Role 1: Centrilogic CSA -->
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-period">Mar 2023 — Present</span>
+              <span class="timeline-company">Centrilogic Inc. · Toronto, ON</span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">Cloud Solutions Architect & Presales Lead</h3>
+              <p class="timeline-summary">
+                Leading enterprise-scale Microsoft Azure, Agentic AI, and hybrid cloud architecture for 100+ projects across banking, healthcare, and government. 
+                Dedicating 80% of role to presales leadership and 20% to deep architecture, governance, and delivery enablement.
+              </p>
+              <ul class="timeline-achievements">
+                <li>Delivered 12+ high-impact PoC demonstrations (Azure OpenAI, Agentic AI, Terraform/CI/CD automation) resulting in 25% efficiency gains and securing multi-million dollar contracts.</li>
+                <li>Authored winning SOWs, RFP/RFI responses, architectural roadmaps, LOE estimates, and cost analyses presented directly to C-level executives.</li>
+                <li>Led technical sales enablement initiatives, training the sales organization on Generative AI, Copilot Studio, and Azure cloud capabilities.</li>
+                <li>Provided technical leadership during implementation, guiding engineering teams through complex networking, Entra ID identity, and data migration challenges.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Azure AI Foundry</span>
+                <span class="tag">Copilot Studio</span>
+                <span class="tag">Presales Discovery</span>
+                <span class="tag">SOW / RFP Ownership</span>
+                <span class="tag">Terraform CI/CD</span>
+                <span class="tag">Entra ID</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 2: Centrilogic CSE -->
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-period">Apr 2022 — Mar 2023</span>
+              <span class="timeline-company">Centrilogic Inc. · Toronto, ON</span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">Cloud Solution Engineer</h3>
+              <p class="timeline-summary">
+                Designed, built, and deployed Azure IaaS/PaaS cloud infrastructure with microservices, Kubernetes (AKS), and Docker. Served as the technical bridge between sales and engineering during early-stage engagements.
+              </p>
+              <ul class="timeline-achievements">
+                <li>Led solution design and proposal shaping for enterprise cloud migrations, disaster recovery plans, and zero-trust security postures.</li>
+                <li>Integrated Azure AI services for enhanced observability, monitoring, and data-driven operational insights.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Azure Kubernetes</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Cloud Migration</span>
+                <span class="tag">Disaster Recovery</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 3: Process Fusion -->
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-period">Aug 2019 — Apr 2022</span>
+              <span class="timeline-company">Process Fusion · Toronto, ON</span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">Systems Engineer</h3>
+              <p class="timeline-summary">
+                Led client-facing discovery sessions, translating enterprise business requirements into tailored Microsoft cloud architectures across applications, identity (Entra ID), and security.
+              </p>
+              <ul class="timeline-achievements">
+                <li>Supported presales through technical consultations, SOW authoring, PoC delivery, and client training on custom cloud applications.</li>
+                <li>Managed full project lifecycles including Azure migrations, security vulnerability resolution, and SLA-compliant support.</li>
+                <li>Collaborated on Azure networking (NSGs, VMs, Monitor) and integrated enterprise data capture tools (ABBYY, Kofax).</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Entra ID</span>
+                <span class="tag">Data Capture (ABBYY/Kofax)</span>
+                <span class="tag">Azure Networking</span>
+                <span class="tag">Presales SOWs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 4: Seneca College & Source HOV -->
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-period">2017 — 2019</span>
+              <span class="timeline-company">Seneca College / Source HOV</span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">Systems Engineering & Academic Foundations</h3>
+              <p class="timeline-summary">
+                Supported enterprise lab operations, Linux/Windows administration, networking configurations (iptables, Cisco routers/switches), and PowerShell automation scripts.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Active Directory</span>
+                <span class="tag">PowerShell Scripting</span>
+                <span class="tag">Cisco Networking</span>
+                <span class="tag">Linux iptables</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ELITE CERTIFICATIONS & CREDENTIALS -->
+    <section class="section-block" id="certifications" aria-labelledby="certs-title">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge">Verified Credentials</div>
+          <h2 id="certs-title" class="section-title">Industry Certifications & Education</h2>
+          <p class="section-lead">Top-tier credentials in Cloud Architecture, Artificial Intelligence, Security, and Systems Engineering.</p>
+        </div>
+
+        <div class="certs-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card highlight-cert">
+            <div class="cert-badge-icon">🏛️</div>
+            <div class="cert-code">CCAR-F</div>
+            <h3 class="cert-name">Claude Certified Architect</h3>
+            <p class="cert-issuer">Anthropic · Enterprise AI & Architecture</p>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card highlight-cert">
+            <div class="cert-badge-icon">☁️</div>
+            <div class="cert-code">AZ-305</div>
+            <h3 class="cert-name">Azure Solutions Architect Expert</h3>
+            <p class="cert-issuer">Microsoft · Highest Tier Azure Architecture</p>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card highlight-cert">
+            <div class="cert-badge-icon">🤖</div>
+            <div class="cert-code">AI-102</div>
+            <h3 class="cert-name">Azure AI Engineer Associate</h3>
+            <p class="cert-issuer">Microsoft · Azure OpenAI, Search & Cognitive Services</p>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card">
+            <div class="cert-badge-icon">⚡</div>
+            <div class="cert-code">GH-300</div>
+            <h3 class="cert-name">GitHub Copilot Certified</h3>
+            <p class="cert-issuer">GitHub · Earned 2026 · AI Developer Velocity</p>
+          </div>
+
+          <!-- Cert 5 -->
+          <div class="cert-card">
+            <div class="cert-badge-icon">🔧</div>
+            <div class="cert-code">AZ-104</div>
+            <h3 class="cert-name">Azure Administrator Associate</h3>
+            <p class="cert-issuer">Microsoft · Enterprise Cloud Administration</p>
+          </div>
+
+          <!-- Cert 6 -->
+          <div class="cert-card">
+            <div class="cert-badge-icon">🛡️</div>
+            <div class="cert-code">SC-900</div>
+            <h3 class="cert-name">Microsoft Security & Identity</h3>
+            <p class="cert-issuer">Microsoft · Entra ID, Compliance & Governance</p>
+          </div>
+        </div>
+
+        <!-- Education Strip -->
+        <div class="education-strip">
+          <div class="edu-card">
+            <span class="edu-degree">Computer Networking & Technical Support Diploma</span>
+            <span class="edu-school">Seneca College · Toronto, Canada</span>
+            <span class="edu-years">2018 — 2019</span>
+          </div>
+          <div class="edu-card">
+            <span class="edu-degree">Bachelor of Engineering Degree (ECE / Information & Comm)</span>
+            <span class="edu-school">Anna University · Chennai, India</span>
+            <span class="edu-years">2013 — 2017</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERSPECTIVES & THOUGHT LEADERSHIP -->
+    <section class="section-block section-alt" id="perspectives" aria-labelledby="perspectives-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Working Theses</div>
+          <h2 id="perspectives-title" class="section-title">Architectural Perspectives & Insights</h2>
+          <p class="section-lead">Field notes on enterprise AI governance, sovereign cloud architectures, and presales strategy.</p>
+        </div>
+
+        <div class="perspectives-grid">
+          <!-- Article 1 -->
+          <article class="perspective-card">
+            <div class="article-meta">
+              <span class="article-tag">Agentic AI & Architecture</span>
+              <span class="read-time">7 min read</span>
+            </div>
+            <h3 class="article-title">Why Model Context Protocol (MCP) is the Real Backbone of Enterprise AI</h3>
+            <p class="article-excerpt">Custom REST wrappers are brittle. Model Context Protocol standardizes how LLM agents interact with enterprise data, ERPs, and cloud infrastructure with auditable guardrails.</p>
+            <a href="#contact" class="read-more-link" data-article="mcp">Read Perspective →</a>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="perspective-card">
+            <div class="article-meta">
+              <span class="article-tag">Presales Strategy</span>
+              <span class="read-time">6 min read</span>
+            </div>
+            <h3 class="article-title">Why 80% of Enterprise Cloud Deals Are Won (or Lost) in Technical Discovery</h3>
+            <p class="article-excerpt">Sales pitches don't close complex multi-million dollar cloud transformations. Discovery workshops that expose hidden integration risks and map precise TCO metrics do.</p>
+            <a href="#contact" class="read-more-link" data-article="discovery">Read Perspective →</a>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="perspective-card">
+            <div class="article-meta">
+              <span class="article-tag">Regulated Cloud & Security</span>
+              <span class="read-time">8 min read</span>
+            </div>
+            <h3 class="article-title">Sovereign AI & Zero-Trust in Regulated Canadian Enterprises</h3>
+            <p class="article-excerpt">How to architect Azure AI Foundry and Fabric deployments when banking and healthcare regulators mandate strict data residency, auditability, and no third-party model training.</p>
+            <a href="#contact" class="read-more-link" data-article="sovereignty">Read Perspective →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & CONSULTATION HUB -->
+    <section class="section-block" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card-wrapper">
+          <div class="contact-info-col">
+            <div class="section-badge">Get in Touch</div>
+            <h2 id="contact-title" class="contact-heading">Bring me in when the mandate requires architectural depth & presales results.</h2>
+            <p class="contact-desc">
+              Whether you need strategic presales leadership to win high-stakes enterprise cloud contracts, or an architect to deploy governed Agentic AI systems in production, let's connect.
+            </p>
+
+            <div class="contact-channels">
+              <a href="mailto:lokeshkumarpadmanaban4@gmail.com" class="channel-item">
+                <span class="channel-icon">✉️</span>
+                <div>
+                  <span class="channel-label">Email</span>
+                  <span class="channel-val">lokeshkumarpadmanaban4@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="tel:+16472243265" class="channel-item">
+                <span class="channel-icon">📞</span>
+                <div>
+                  <span class="channel-label">Direct Phone</span>
+                  <span class="channel-val">+1 (647) 224-3265</span>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/lokesh-kumar-padmanaban/" target="_blank" rel="noopener noreferrer" class="channel-item">
+                <span class="channel-icon">🔗</span>
+                <div>
+                  <span class="channel-label">LinkedIn</span>
+                  <span class="channel-val">linkedin.com/in/lokesh-kumar-padmanaban</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/lkpadmanaban" target="_blank" rel="noopener noreferrer" class="channel-item">
+                <span class="channel-icon">🐙</span>
+                <div>
+                  <span class="channel-label">GitHub</span>
+                  <span class="channel-val">github.com/lkpadmanaban</span>
+                </div>
+              </a>
+
+              <div class="channel-item">
+                <span class="channel-icon">📍</span>
+                <div>
+                  <span class="channel-label">Location</span>
+                  <span class="channel-val">Toronto, Ontario, Canada</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-col">
+            <form id="contactForm" class="contact-form" onsubmit="handleContactSubmit(event)">
+              <div class="form-group">
+                <label for="name">Your Name / Title</label>
+                <input type="text" id="name" name="name" required placeholder="e.g. Jane Doe, VP of Engineering">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Work Email</label>
+                <input type="email" id="email" name="email" required placeholder="jane.doe@enterprise.com">
+              </div>
+
+              <div class="form-group">
+                <label for="interest">Engagement Focus</label>
+                <select id="interest" name="interest">
+                  <option value="presales">Enterprise Presales & Discovery</option>
+                  <option value="ai">Agentic AI & Azure AI Foundry Deployment</option>
+                  <option value="cloud">Cloud Architecture & Landing Zone Blueprint</option>
+                  <option value="leadership">Architecture Team Leadership / Advisory</option>
+                  <option value="other">Other Inquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Project Scope / Mandate</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Tell me about your initiative, timeline, and architectural challenges..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Send Discovery Request</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+
+              <div id="formSuccess" class="form-alert success" style="display: none;">
+                ✓ Message prepared! Your default mail client will open with your inquiry.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-logo">Lokesh Kumar Padmanaban</span>
+        <p class="footer-text">Senior Cloud & Agentic AI Solutions Architect · Enterprise Presales Leader · Toronto, ON</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/lkpadmanaban" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/lokesh-kumar-padmanaban/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:lokeshkumarpadmanaban4@gmail.com">Email</a>
+        <a href="#top">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Scripts -->
+  <script src="scripts/app.js"></script>
+</body>
+</html>
